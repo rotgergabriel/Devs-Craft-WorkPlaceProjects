@@ -1,0 +1,206 @@
+body,
+h4 {
+    font-family: 'Dancing Script', cursive;
+    color: grey;
+}
+
+h1 {
+    color: #FF007F;
+}
+
+h2 {
+    color: rgba(0, 0, 0, 0.719);
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    opacity: 5;
+}
+
+#countdown {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    /* Colocado a la izquierda */
+    z-index: 50;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #e96f94ab;
+    overflow: hidden;
+    /* Ocultar desbordamiento de la imagen */
+}
+
+#countdown .cloud-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajustar la imagen al contenedor */
+    position: absolute;
+    z-index: -1;
+}
+
+#countdown .countdown-content {
+    position: relative;
+    z-index: 1;
+    /* Colocar el contenido por encima de la imagen */
+    padding: 20px;
+}
+
+#countdown div {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+}
+
+#fixed--menu {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
+}
+
+.brand-logo {
+    margin-left: 10px;
+}
+
+.font-large {
+    font-size: 20px;
+}
+
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust the color as needed for visibility */
+    font-size: 3rem;
+    /* Adjust the font size as desired */
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel img {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+    /* Makes the image visible*/
+}
+
+/*Carousel indicators*/
+.carousel-indicators {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background-color: #e96f94ab;
+    border: 1px solid #e96f94ab;
+}
+
+.color-link a {
+    color: #FF007F;
+}
+
+/* Position the player in the top right corner */
+#music-player {
+    position: fixed;
+    top: 40px;
+    right: -105px;
+    z-index: 50;
+    width: 15rem;
+    height: 7rem;
+    background-image: url("/assets/static/img/nubes/nube-boton-2.png");
+    background-position: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Style the audio player and button */
+#player {
+    width: 200px;
+    height: 50px;
+}
+
+#play-pause-button {
+    /* Cambiar el tamaño del botón */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105%, -50%);
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: none;
+
+    /* Agregar esta regla */
+    color: #FF007F;
+    animation: color-change 1.5s linear infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: #FF007F;
+    }
+
+    25% {
+        color: #FF007F;
+    }
+
+    50% {
+        color: #FFEABFAB;
+    }
+
+    75% {
+        color: #FF007F;
+    }
+
+    100% {
+        color: #FF007F;
+    }
+}
+
+/* For mobile screens */
+@media(min-width:320px) and (max-width:650px) {
+    #container {
+        width: 100%;
+    }
+
+    .brand-logo {
+        margin-left: 0px;
+    }
+
+    .parallax-text {
+        font-size: 2rem;
+    }
+}

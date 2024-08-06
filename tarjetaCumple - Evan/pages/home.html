@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/static/img/favicon.ico" />
+    <link rel="stylesheet" href="/assets/static/styles/home.css">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize.css min -->
+    <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
+    <!-- Materialize.js min  -->
+    <script src="/assets/materialize/js/materialize.min.js"></script>
+    <title>Mi primer añito - Evangelina</title>
+</head>
+
+<body id="container">
+    <!-- Navbar -->
+    <nav id="fixed--menu">
+        <div class="nav-wrapper">
+            <span class="brand-logo pink-text">Evangelina !</span>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons pink-text">menu</i></a>
+            <ul class="right hide-on-med-and-down header__links">
+                <li><a class="grey-text font-large" href="#confirmAssistance">Confirmar presencia</a></li>
+                <li><a class="grey-text font-large" href="#eventLocation">Lugar del evento</a></li>
+                <li><a class="grey-text font-large" href="https://photos.app.goo.gl/AFxbC1VD16Hbfepr9">Google fotos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidenav -->
+    <ul id="slide-out" class="sidenav sidenav-close header__links">
+        <li>
+            <div class="user-view">
+                <a href="#!" class="sidenav-close right"><i class="material-icons">close</i></a>
+                <a href="#user"><img class="circle" src="../assets/static/img/evangelina/evan11.jpeg"></a>
+                <a href="#name"><span class="pink-text name">Evangelina</span></a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="grey-text font-large" href="#confirmAssistance"> - Confirmar presencia</a></li>
+        <li><a class="grey-text font-large" href="#eventLocation"> - Lugar del evento</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader blue-text">¡ Ingresa y compartí tus fotos del evento !</a></li>
+        <li><a class="waves-effect pink-text font-large" href="https://photos.app.goo.gl/AFxbC1VD16Hbfepr9"> - Google fotos</a></li>
+    </ul>
+
+
+    <div>
+        <!-- Media player -->
+        <div id="music-player" class="top-right">
+            <audio id="player">
+                <source src="../assets/static/music/Ma-Belle-Evangeline.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button id="play-pause-button">Play</button>
+        </div>
+        <!-- countdown  -->
+        <div id="countdown" class="fixed-bottom-left">
+            <div class="countdown-container">
+                <img src="/assets/static/img/nubes/nube-boton-2.png" alt="Fondo de nubes" class="cloud-background">
+                <div class="countdown-content">
+                    <p>Cuenta regresiva</p>
+                    <div id="days"></div>
+                    <div id="hours"></div>
+                    <div id="minutes"></div>
+                    <div id="seconds"></div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel">
+            <!--using font awesome for arrows-->
+            <i class="prev fa-solid fa-arrow-left"></i>
+            <img src="/assets/static/img/evangelina/evan13.jpeg" alt="image 1">
+            <!-- <img src="/assets/static/img/evangelina/evan11.jpeg" alt="image 2"> -->
+            <img src="/assets/static/img/evangelina/evan1.jpeg" alt="image 3">
+            <img src="/assets/static/img/evangelina/evan6.jpeg" alt="image 4">
+            <img src="/assets/static/img/evangelina/evan4.jpeg" alt="image 5">
+            <img src="/assets/static/img/evangelina/evan5.jpeg" alt="image 6">
+            <!--using font awesome for arrows-->
+            <i class="next fa-solid fa-arrow-right"></i>
+            <!--slider indicators-->
+            <div class="carousel-indicators"></div>
+        </div>
+        <!-- Parallax text-->
+        <div class="section white">
+            <div class="row container">
+                <h1 class="header center">Queridos familiares y amigos</h1>
+                <h4 class="center text-darken-3 lighten-3">Los invito a celebrar mi primer cumpleaños !!!
+                </h4>
+            </div>
+        </div>
+        <!-- Parallax img-->
+        <div class="parallax-container">
+            <div class="parallax"><img src="/assets/static/img/corazon/heart-5106075_1280.png"></div>
+        </div>
+        <!-- Parallax text-->
+        <div class="section white">
+            <div class="row container">
+                <h4 class="center text-darken-3 lighten-3">Será una fiesta llena de alegría, música, juegos y diversión.
+                    Espero que puedan estar presentes para compartir este momento tan especial para mí.
+                </h4>
+            </div>
+        </div>
+        <!-- Parallax img-->
+        <div class="parallax-container">
+            <div class="parallax evangelina"><img src="/assets/static/img/globo/landscape-1954307_1280.png"></div>
+        </div>
+        <!-- Parallax text-->
+        <div class="section white" id="confirmAssistance">
+            <div class="row container">
+                <h2 class="header center">Por favor, confirma tu presencia.</h2>
+            </div>
+        </div>
+        <!-- Parallax img-->
+        <div class="parallax-container">
+            <div class="parallax"><img src="/assets/static/img/nubes/v1015-101a.jpg"></div>
+            <div class="parallax-text">
+                <h3 class="header center color-link">
+                    <a target="_blank"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSd9Lq7JBgyp1-o4-6CZmTrpJpf7SVjibHiHxH1oui63_WVGTg/viewform?usp=sf_link">Ingresá
+                        aquí
+                    </a>
+                </h3>
+            </div>
+        </div>
+        <!-- Parallax text-->
+        <div class="section white" id="eventLocation">
+            <div class="row container">
+                <h2 class="header center">Lugar del evento</h2>
+                <h4 class="center text-darken-3 lighten-3">
+                    La fiesta se realizará el domingo 11 de febrero, de 12:45 hs a 17:00 hs, en el Salón de Fiestas
+                    "El Ángel". Ingresa al link de abajo para ver la ubicación.
+                </h4>
+            </div>
+        </div>
+        <!-- Parallax img-->
+        <div class="parallax-container">
+            <div class="parallax"><img src="/assets/static/img/nubes/v1015-104a.jpg"></div>
+            <div class="parallax-text">
+                <h3 class="header center color-link">
+                    <a target="_blank" href="https://maps.app.goo.gl/K8awj381gLsyePVU6">Ver ubicación aquí</a>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #ffffff;">
+        <div class="container right-align">
+            <div class="row">
+                <!-- <div class="col-md-6">
+                    <p>Created by: Rotger gabriel Augusto</p>
+                </div> -->
+                <br>
+                <div class="col-md-6">
+                    <a href="mailto:rotgergabriel@gmail.com" class="email">E-Mail: rotgergabriel@gmail.com</a>
+                    <br>
+                    <a href="tel:+543813416386" class="phone">Llamadas: +54-381-3416386</a>
+                    <br>
+                    <a href="https://wa.me/393290818919" class="phone">Whatsapp: +39-32-90818919</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <!-- <img src="logo.png" alt="Logo"> -->
+                <p>&copy; 2024 Rotger Gabriel Augusto</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/js/home.js" defer></script>
+    <script type="module" src="/js/scroll-behavior-controller.js"></script>
+</body>
+
+</html>
