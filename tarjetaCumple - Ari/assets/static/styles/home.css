@@ -1,0 +1,328 @@
+/* Typography */
+body,
+h4 {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(216, 73, 204);
+}
+
+h1 {
+    color: #FF007F;
+}
+
+h2 {
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.font-large {
+    font-size: 20px;
+}
+
+.email {
+    color: #ca007c;
+}
+
+.col-md-6 p {
+    margin: 0;
+}
+
+/* Container */
+#container {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    opacity: 5;
+}
+
+/* Fixed Menu */
+#fixed--menu {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-image: linear-gradient(to bottom, #cc44dd, #d65ae0, #e06fe3, #e882e7, #f095eb);
+    box-shadow: none;
+}
+
+.brand-logo {
+    margin-left: 10px;
+}
+
+/* Parallax Text */
+.parallax-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* Adjust the color as needed for visibility */
+    font-size: 3rem;
+    /* Adjust the font size as desired */
+    text-align: center;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel img {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+    /* Makes the image visible*/
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    display: none;
+}
+
+.carousel-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.carousel-indicator.active {
+    background-color: #e96f94ab;
+    border: 1px solid #e96f94ab;
+}
+
+/* Countdown */
+#countdown {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    /* Positioned to the left */
+    z-index: 50;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* White */
+    text-shadow:
+        1px 1px 0 #FF69B4,
+        -1px -1px 0 #FF69B4,
+        1px -1px 0 #FF69B4,
+        -1px 1px 0 #FF69B4;
+    /* Strong pink border */
+    overflow: hidden;
+    /* Hide overflow */
+}
+
+#countdown .cloud-background {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Fit the image to the container */
+    position: absolute;
+    z-index: -1;
+}
+
+#countdown .countdown-content {
+    position: relative;
+    z-index: 1;
+    /* Position content above the image */
+    padding: 20px;
+}
+
+.countdown-content p {
+    margin: 0;
+    padding: 0;
+}
+
+#countdown div {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 0;
+}
+
+/* Music Player */
+#music-player {
+    position: fixed;
+    top: 40px;
+    right: -105px;
+    z-index: 50;
+    width: 15rem;
+    height: 7rem;
+    background-image: url("/assets/static/img/corazon/corazon.png");
+    background-position: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Style the audio player and button */
+#player {
+    width: 200px;
+    height: 50px;
+}
+
+#play-pause-button {
+    /* Resize the button */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-115%, -55%);
+    width: 90px;
+    height: 45px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #800080;
+    animation: color-change 1.5s linear infinite;
+}
+
+/* Color Link */
+.color-link a {
+    color: rgb(114, 11, 239);
+    /* White */
+    text-shadow: 2px 2px 4px #FF69B4,
+        /* Strong pink shadow */
+        -1px -1px 1px #FF69B4,
+        /* Additional adjustment for the border */
+        1px -1px 1px #FF69B4,
+        -1px 1px 1px #FF69B4;
+}
+
+/* Shape Divider - Top */
+.custom-shape-divider-top-1723065911 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1723065911 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-top-1723065911 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Shape Divider - Bottom */
+.custom-shape-divider-bottom-1723065638 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1723065638 svg {
+    position: relative;
+    display: block;
+    width: calc(151% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1723065638 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Shape Divider - Footer */
+.custom-shape-divider-bottom-1723067902 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1723067902 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 132px;
+}
+
+.custom-shape-divider-bottom-1723067902 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Keyframes */
+@keyframes color-change {
+    0% {
+        color: #FF007F;
+    }
+
+    25% {
+        color: #FF007F;
+    }
+
+    50% {
+        color: #FFEABFAB;
+    }
+
+    75% {
+        color: #FF007F;
+    }
+
+    100% {
+        color: #FF007F;
+    }
+}
+
+.footer--background__color {
+    background-color: #FFFFFF;
+}
+
+/* Media Queries */
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1723067902 svg {
+        width: calc(300% + 1.3px);
+        height: 52px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1723036748 svg {
+        width: calc(183% + 1.3px);
+        height: 38px;
+    }
+}
+
+/* For mobile screens */
+@media(min-width:320px) and (max-width:650px) {
+    #container {
+        width: 100%;
+    }
+
+    .brand-logo {
+        margin-left: 0px;
+    }
+
+    .parallax-text {
+        font-size: 2rem;
+    }
+}
