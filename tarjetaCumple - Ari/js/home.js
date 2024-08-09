@@ -105,7 +105,7 @@ function updateCountdown() {
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        countdownElement.textContent = "¡Feliz cumple Arianna! ";
+        countdownElement.textContent = "¡Feliz cumpleaños, Arianna.! ";
     }
 }
 

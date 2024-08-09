@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/static/img/favicon.ico" />
     <link rel="stylesheet" href="/assets/static/styles/home.css">
-    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,17 +54,39 @@
         <li><a class="subheader purple-text">¡ Ingresa y compartí tus fotos del evento !</a></li>
         <li><a class="waves-effect pink-text font-large" href="https://photos.app.goo.gl/wMzNrz9C5rbw6jzP8"> - Google
                 fotos</a></li>
+        <div class="divider"></div>
         <div class="container right-align">
             <div class="row">
                 <div class="col-md-6">
-                    <p>Contacto de los padres !</p>
-                    <br>
+                    <p class="subheader purple-text">Contacto de los padres !</p>
                     <a href="tel:+543813416386" class="phone">Papá: +54 9 3816 68-8118</a>
                     <br>
                     <a href="tel:+543813416386" class="phone">Mamá: +54 9 381 340-6957</a>
                 </div>
             </div>
         </div>
+        <div class="divider"></div>
+        <!-- Countdown -->
+        <div id="countdown" class="fixed-bottom-left">
+            <div class="countdown-container">
+                <div class="countdown-content">
+                    <p>Días restantes</p>
+                    <div class="time-segment">
+                        <span id="days"></span><span class="time-label">D</span>
+                    </div>
+                    <div class="time-segment">
+                        <span id="hours"></span><span class="time-label">H</span>
+                    </div>
+                    <div class="time-segment">
+                        <span id="minutes"></span><span class="time-label">M</span>
+                    </div>
+                    <div class="time-segment">
+                        <span id="seconds"></span><span class="time-label">S</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </ul>
 
 
@@ -221,19 +242,6 @@
         </div>
     </div>
     <!-- countdown  -->
-    <div id="countdown" class="fixed-bottom-left">
-        <div class="countdown-container">
-            <!-- <img src="/assets/static/img/corazon/" alt="Fondo de nubes" class="cloud-background"> -->
-            <div class="countdown-content">
-                <p>Días restantes</p>
-                <div id="days"></div>/
-                <div id="hours"></div>/
-                <div id="minutes"></div>/
-                <div id="seconds"></div>
-                <p>D - H - M - S </p>
-            </div>
-        </div>
-    </div>
     <footer class="footer--background__color;">
         <div class="container right-align">
             <div class="row">

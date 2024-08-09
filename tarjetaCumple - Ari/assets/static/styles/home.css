@@ -109,24 +109,39 @@ h2 {
 
 /* Countdown */
 #countdown {
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    /* Positioned to the left */
-    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: 25px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    /* Estilo de reloj antiguo */
     font-weight: bold;
     color: #FFFFFF;
-    /* White */
     text-shadow:
         1px 1px 0 #FF69B4,
         -1px -1px 0 #FF69B4,
-        1px -1px 0 #FF69B4,
+        1px -1px 0 #a81288,
         -1px 1px 0 #FF69B4;
-    /* Strong pink border */
     overflow: hidden;
-    /* Hide overflow */
+}
+
+.countdown-content {
+    display: flex;
+    gap: 10px;
+    /* Espacio entre segmentos de tiempo */
+}
+
+.time-segment {
+    display: flex;
+    align-items: baseline;
+}
+
+.time-label {
+    font-size: 0.5em;
+    /* Tamaño más pequeño para las etiquetas */
+    margin-left: 3px;
 }
 
 #countdown .cloud-background {
